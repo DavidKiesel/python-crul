@@ -1,0 +1,8 @@
+##############################################################################
+# Installed by command below.
+#
+# pip \
+#     install \
+#     pybuilder
+
+pybuilder==0.13.15
