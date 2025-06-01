@@ -188,7 +188,7 @@ def set_properties(
     #
     # https://pybuilder.io/documentation/plugins
 
-    # sets setup.py variable classifiers
+    # Sets setup.py variable classifiers.
     # https://pypi.org/classifiers/
     project.set_property(
         'distutils_classifiers',
@@ -206,6 +206,14 @@ def set_properties(
             'Programming Language :: Python :: 3.12',
             'Programming Language :: Python :: 3.13',
         )
+    )
+
+    # Sets twine option --repository argument.
+    # To upload to pypi, this setting can be overridden with pyb argument
+    # `-P 'distutils_upload_repository_key=pypi'`.
+    project.set_property(
+        'distutils_upload_repository_key',
+        'testpypi'
     )
 
 # https://pybuilder.io/documentation/writing-plugins
